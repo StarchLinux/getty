@@ -3,15 +3,15 @@
 .SH "NAME"
 getty \- a small getty for linux
 .SH "SYNOPSIS"
-\fBgetty\fR \fItty\fR [\fI--noclear\fR] [\fI--long-hostname\fR]
+\fBgetty\fR \fItty\fR [\fI-Hc\fR]
 .SH "DESCRIPTION"
 The command \fBgetty\fP is normally invoked by \fIinit(8)\fP, opens a tty port,
 prompts for a login name and invokes the /bin/login command.
 .SH "OPTIONS"
-\fB--noclear\fR makes getty not clear the screen before displaying the
+\fB-c\fR makes getty not clear the screen before displaying the
 login prompt.
 
-\fB--long-hostname\fR makes getty display the full
+\fB-H\fR makes getty display the full
 hostname in the login prompt.
 .SH "FILES"
 .TS
