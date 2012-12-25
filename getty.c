@@ -6,7 +6,7 @@
 #include <sys/param.h>
 #include <utmp.h>
 #include <fcntl.h>
-#include <sys/signal.h>
+#include <signal.h>
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <errno.h>
