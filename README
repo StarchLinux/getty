@@ -1,0 +1,12 @@
+This is actually a mingetty without the printfs.
+Why?  Because then you can link it against dietlibc
+(http://www.fefe.de/dietlibc/).
+
+Actually, diet libc now supports printf, but not using it makes binaries
+smaller nonetheless.
+
+The difference is remarkable:
+
+USER       PID %CPU %MEM   VSZ  RSS TTY      STAT START   TIME COMMAND
+root      5487  0.0  0.1  1180  444 tty5     S    00:40   0:00 /sbin/mingetty tty5
+root      6035  0.0  0.0    16   16 tty5     S    00:45   0:00 /sbin/getty tty5
